@@ -4,16 +4,16 @@
 
 <img align="right" src="paniK.gif" width="250" />
 
-For use case see Alertify [Alertify](https://github.com/MaxwellDPS/Alertify) which uses a gotify server for realtime headless alerts
+For use case see [Alertify](https://github.com/MaxwellDPS/Alertify) which uses a gotify server for real-time headless alerts
 
 ### API Support
-API 23 Android 6 - API 29 Android 10 is supported
+API 23 Android 6 onward is supported
 
 #### Alerts Types
 
 | Type | Message Type                  | Type | Message Type                     |
 |------|-------------------------------|------|----------------------------------|
-| CMAS | Presidental alert             | ETWS | ETWS Tsunami alert               |
+| CMAS | Presidential alert            | ETWS | ETWS Tsunami alert               |
 | CMAS | Extreme alert                 | ETWS | ETWS Earthquake alert            |
 | CMAS | Severe alert                  | ETWS | ETWS Earthquake & Tsunami  alert |
 | CMAS | Amber / Child Abduction alert | ETWS | ETWS Other Message               |
@@ -21,38 +21,31 @@ API 23 Android 6 - API 29 Android 10 is supported
 | CMAS | Required Monthly Test         | 
 | CMAS | Local/State Test              |
 | CMAS | Broadcast Operator alert      |
-| CMAS | Critical alert                |
 
 
 ### Examples
 
-See Example Messages [Images](./Images.md)
+[See Example Messages](./Images.md)
 
 ![Images](./img/image.png)
 
 ## Features
 
 * Spoof WEA via [CMAS](https://en.wikipedia.org/wiki/Wireless_Emergency_Alerts) & [ETWS](https://www.technologyreview.com/2011/03/11/260021/how-japans-earthquake-and-tsunami-warning-systems-work/)
+* Mute alert sound
+* Delay alerts by a set amount
+* No internet required
 
 
 ## Installation
 
-Download the apk or build via Android studio.
+Download the APK or build via Android studio.
 
-### Allow display over other apps
-
-By default Android does not allow apps to dispay over other apps
-
-Here is one way to disable battery optimization for Gotify.
-
-* Open "Settings"
-* Search for "Apps"
-* Find "PaniK" and select Advanced
-* Allow Display over other apps
+After installation, you will have to allow "Display over other apps". The specific steps differ based on the ROM, though usually this can be done in the app info page for PaniK under settings. You should also disable Battery optimization, though some manufacturers *cough Xiaomi cough* make it much harder.
 
 ## Building
 
-Execute the following command to build the apk.
+Execute the following command to build the APK.
 ```bash
 $ ./gradlew build
 ```
